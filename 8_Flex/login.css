@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    display: flex;
+    background-color: white;
+}
+.outer>.left{
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left>img{
+    width:500px;
+}
+.outer>.right{
+    background-color:cornflowerblue;
+    flex-basis: 55%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+}
+.right>h1{
+    text-transform: capitalize;
+    color:white;
+    text-shadow: 1px 2px 2px black;
+    margin-bottom: 15px;
+}
+.right>.box{
+    background-color: white;
+    /* height: 300px; */
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 4px black;
+}
+form>label{
+    text-transform: capitalize;
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+form>input{
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px;
+    outline:none; 
+}
+form>input:focus{
+    border: 2px solid blueviolet;
+}
+input::placeholder{
+    font-size:14px;
+}
+form>button{
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    border: none;
+    margin-bottom: 10px;
+    text-shadow: 1px 2px 2px black;
+}
+.box>div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+}
+div>a{
+    text-decoration: none;
+}
