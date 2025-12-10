@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer>.inner{
+    height: 400px;
+    width:350px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 5px black;
+
+    /* Default value of overflow is visible */
+    /* overflow: hidden;  Hide the content out of box */
+    /* overflow: scroll; Both sides create the scroll bar*/
+    /* overflow-y: scroll; */
+    /* overflow-x: scroll; */
+    overflow: auto;
+}
+
+.inner>h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+.inner>p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
