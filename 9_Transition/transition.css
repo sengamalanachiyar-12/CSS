@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.outer>h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+.outer>.inner{
+    background-color: yellow;
+    height: 250px;
+    width: 250px;
+            
+    /* transition: all 2s ease 1s; */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+.outer>.inner:hover{
+    background-color: orangered;
+    border-radius: 50%;
+}
