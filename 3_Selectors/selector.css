@@ -1,0 +1,25 @@
+/* 1.Tagname selector*/
+header{
+    background-color: aqua;
+    height: 250px;
+}
+/* 2.ID selector*/
+#topic{
+    color:plum;
+}
+/*3.Class selector*/
+.para{
+    background-color: coral;
+    font-size: 27px;
+    font-style: italic;
+}
+
+/*4.Universal selectors*/
+*{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*5.Group Selector*/
+h2,#topic,.para{
+    text-align: center;
+}
